@@ -1,0 +1,19 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "scripts": {
+    "build-html": "eleventy",
+    "build-markdown": "cross-env LAYOUT=markdown eleventy",
+    "build": "yarn build-html; yarn build-markdown",
+    "deploy-site": "rsync --progress -r _site/ groudon:/var/www/vitalya.me",
+    "dev": "eleventy --serve"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "cross-env": "^7.0.2",
+    "markdown-it": "^12.0.2",
+    "markdown-it-emoji": "^2.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}

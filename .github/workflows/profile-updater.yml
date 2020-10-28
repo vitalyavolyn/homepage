@@ -1,0 +1,41 @@
+name: Profile repo updater
+
+on:
+  push:
+    branches: [ master ]
+  schedule:
+    - cron: 0 0 * * MON
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Clone vitalyavolyn/vitalyavolyn
+        uses: actions/checkout@v2
+        with:
+          repository: vitalyavolyn/vitalyavolyn
+          token: ${{secrets.REPO_KEY}}
+          path: userpage
+
+      - name: Install Node.JS
+        uses: actions/setup-node@v2-beta
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build README.md
+        run: yarn build-markdown
+
+      - name: Push README.md to vitalyavolyn/vitalyavolyn
+        run: |
+          mv _md/README.md userpage
+          cd userpage
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Update README.md"
+          git push
+        env:
+          REPO_KEY: ${{secrets.REPO_KEY}}
