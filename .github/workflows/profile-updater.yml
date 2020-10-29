@@ -12,6 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
+
       - name: Clone vitalyavolyn/vitalyavolyn
         uses: actions/checkout@v2
         with:
@@ -23,7 +24,7 @@ jobs:
         uses: actions/setup-node@v2-beta
 
       - name: Install dependencies
-        run: yarn
+        run: yarn --ignore-optional
 
       - name: Build README.md
         run: yarn build-markdown
