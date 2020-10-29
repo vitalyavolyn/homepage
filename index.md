@@ -21,7 +21,7 @@
 
 ## :hammer_and_wrench: Чем пользуюсь
 
-Git, JavaScript, Node.JS, MongoDB, PHP, Linux.
+Git, JavaScript, Node.JS, Docker, MongoDB, PHP, Linux.
 
 ## :earth_asia: Где меня найти
 
