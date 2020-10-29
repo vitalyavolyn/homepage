@@ -5,7 +5,7 @@ module.exports = async () => {
 
   const getJson = (url) => fetch(url).then(res => res.json())
 
-  const readableNumber = (n) => n.toLocaleString('ru-RU')
+  const readableNumber = (n) => n.toLocaleString('ru-RU').replace(/,/g, ' ')
 
   return [
     {
