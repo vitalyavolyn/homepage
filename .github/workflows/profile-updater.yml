@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: vitalyavolyn/vitalyavolyn
-          token: ${{secrets.REPO_KEY}}
+          token: ${{ secrets.REPO_KEY }}
           path: userpage
 
       - name: Install Node.JS
@@ -26,8 +26,18 @@ jobs:
       - name: Install dependencies
         run: yarn --ignore-optional
 
-      - name: Build README.md
-        run: yarn build-markdown
+      - name: Build README.md, index.html
+        run: yarn build
+
+      - name: Deploy index.html to IPFS
+        run: yarn ipfs-deploy _site -p infura -p pinata -d cloudflare
+        env:
+          IPFS_DEPLOY_PINATA__API_KEY: ${{ secrets.PINATA_API_KEY }}
+          IPFS_DEPLOY_PINATA__SECRET_API_KEY: ${{ secrets.PINATA_SECRET_API_KEY }}
+          IPFS_DEPLOY_CLOUDFLARE__ZONE: vitalya.me
+          IPFS_DEPLOY_CLOUDFLARE__API_EMAIL: i@vitalya.me
+          IPFS_DEPLOY_CLOUDFLARE__RECORD: _dnslink.vitalya.me
+          IPFS_DEPLOY_CLOUDFLARE__API_KEY: ${{ secrets.CF_API_KEY }}
 
       - name: Push README.md to vitalyavolyn/vitalyavolyn
         run: |
@@ -39,4 +49,4 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "Update README.md"
           git push
         env:
-          REPO_KEY: ${{secrets.REPO_KEY}}
+          REPO_KEY: ${{ secrets.REPO_KEY }}

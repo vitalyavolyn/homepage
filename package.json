@@ -5,7 +5,7 @@
     "build-html": "eleventy",
     "build-markdown": "cross-env LAYOUT=markdown eleventy",
     "make-og-image": "node makeOgImage.js",
-    "build": "yarn build-html; yarn make-og-image; yarn build-markdown",
+    "build": "yarn build-html; yarn build-markdown",
     "deploy-site": "rsync --progress -r _site/ groudon:/var/www/vitalya.me",
     "dev": "eleventy --serve"
   },
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "cross-env": "^7.0.2",
+    "ipfs-deploy": "^8.0.1",
     "markdown-it": "^12.0.2",
     "markdown-it-emoji": "^2.0.0",
     "node-fetch": "^2.6.1"
