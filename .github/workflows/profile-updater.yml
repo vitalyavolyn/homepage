@@ -5,6 +5,7 @@ on:
     branches: [ master ]
   schedule:
     - cron: 0 0 * * MON
+    - cron: 0 0 25 2 *
 
 jobs:
   build:
