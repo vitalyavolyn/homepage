@@ -30,16 +30,6 @@ jobs:
       - name: Build README.md, index.html
         run: yarn build
 
-      - name: Deploy index.html to IPFS
-        run: yarn ipfs-deploy _site -p infura -p pinata -d cloudflare
-        env:
-          IPFS_DEPLOY_PINATA__API_KEY: ${{ secrets.PINATA_API_KEY }}
-          IPFS_DEPLOY_PINATA__SECRET_API_KEY: ${{ secrets.PINATA_SECRET_API_KEY }}
-          IPFS_DEPLOY_CLOUDFLARE__ZONE: vitalya.me
-          IPFS_DEPLOY_CLOUDFLARE__API_EMAIL: i@vitalya.me
-          IPFS_DEPLOY_CLOUDFLARE__RECORD: _dnslink.vitalya.me
-          IPFS_DEPLOY_CLOUDFLARE__API_KEY: ${{ secrets.CF_API_KEY }}
-
       - name: Push README.md to vitalyavolyn/vitalyavolyn
         run: |
           mv _md/README.md userpage
