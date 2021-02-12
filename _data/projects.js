@@ -20,11 +20,11 @@ module.exports = async () => {
       text: await getJson('https://mood.vitalya.me/api/stats')
         .then(res => `${readableNumber(res.users)} пользователей`)
     },
-    {
+    /* {
       title: 'Watchy - Дневник киномана',
       link: 'https://vk.com/app7272727',
       text: await getJson('https://api.watchy.tech/health')
         .then(res => `${readableNumber(res.users)} пользователей`)
-    }
+    } */
   ]
 }
