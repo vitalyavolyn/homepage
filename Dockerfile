@@ -1,5 +1,5 @@
 # Используется для генерации og-image.png
-FROM node:current-buster
+FROM node:current
 
 RUN apt-get update \
     && apt-get install -y wget gnupg ca-certificates fonts-noto-color-emoji \
@@ -21,3 +21,4 @@ RUN chown -R pptruser:pptruser /app
 USER pptruser
 
 RUN yarn
+
