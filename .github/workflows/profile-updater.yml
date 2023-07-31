@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: vitalyavolyn/vitalyavolyn
-          token: ${{ secrets.REPO_KEY }}
+          token: ${{ github.token }}
           path: userpage
 
       - name: Install Node.JS
