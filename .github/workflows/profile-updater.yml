@@ -40,4 +40,4 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "Update README.md"
           git push
         env:
-          REPO_KEY: ${{ github.token }}
+          REPO_KEY: ${{ secrets.REPO_KEY }}
