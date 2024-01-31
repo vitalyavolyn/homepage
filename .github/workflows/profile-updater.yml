@@ -38,6 +38,7 @@ jobs:
           cd userpage
           git config user.name github-actions
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config --unset-all http.https://github.com/.extraheader
           git add .
           git diff-index --quiet HEAD || git commit -m "Update README.md"
           git push https://$USERNAME:$REPO_KEY@github.com/vitalyavolyn/vitalyavolyn
