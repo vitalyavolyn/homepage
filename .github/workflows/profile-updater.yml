@@ -43,4 +43,4 @@ jobs:
           git push https://$USERNAME:$REPO_KEY@github.com/vitalyavolyn/vitalyavolyn
         env:
           REPO_KEY: ${{ secrets.REPO_KEY }}
-          USERNAME: github-actions[bot]
+          USERNAME: vitalyavolyn
