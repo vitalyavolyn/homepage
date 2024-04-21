@@ -5,24 +5,25 @@
 }
 ---
 
-# :red_haired_man: Виталя Волынский
+# :red_haired_man: welcome!
 
-{{ age }}-летний разработчик из Павлодара (Казахстан).
+my name is Vitalya, i'm a JS developer from Kazakhstan.
 
-## :sparkles: Что делаю
+## :sparkles: what do i do?
 
-Мини-приложения ВКонтакте, чат-ботов и не только, иногда даже open-source
+in past, i've made some VK mini-apps, chat-bots and open-source projects.
 
-Список некоторых активных проектов:
+a list of some of my active projects:
 
 {% for project in projects %}
   - [{{ project.title }}]({{ project.link }}) ({{ project.text }})
 {% endfor %}
 
-## :hammer_and_wrench: Чем пользуюсь
+## :hammer_and_wrench: what do i use?
 
-Git, JavaScript (React), Node.js, Docker, MongoDB, PHP, Dart, Linux.
+i like to work with:
+git, typescript, react, node.js, docker, mongodb, dart, linux.
 
-## :earth_asia: Где меня найти
+## :earth_asia: links
 
 {{ links | join(', ') }}.

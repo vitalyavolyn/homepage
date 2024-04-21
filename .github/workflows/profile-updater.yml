@@ -24,7 +24,7 @@ jobs:
           path: userpage
 
       - name: Install Node.JS
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v4
 
       - name: Install dependencies
         run: yarn --ignore-optional
