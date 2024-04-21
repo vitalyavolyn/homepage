@@ -11,7 +11,7 @@ my name is Vitalya, i'm a JS developer from Kazakhstan.
 
 ## :sparkles: what do i do?
 
-in past, i've made some VK mini-apps, chat-bots and open-source projects.
+i've made some VK mini-apps, chat-bots and open-source projects.
 
 a list of some of my active projects:
 
@@ -22,7 +22,7 @@ a list of some of my active projects:
 ## :hammer_and_wrench: what do i use?
 
 i like to work with:
-git, typescript, react, node.js, docker, mongodb, dart, linux.
+typescript, react, node.js, docker, mongodb, dart, linux, nix and nixos.
 
 ## :earth_asia: links
 
