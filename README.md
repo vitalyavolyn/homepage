@@ -12,3 +12,5 @@ yarn
 # generate both html and markdown
 yarn build
 ```
+
+To make og-image, use `node makeOgImage.js` or `make_og_image_docker.sh`.
