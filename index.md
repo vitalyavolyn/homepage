@@ -5,7 +5,7 @@
 }
 ---
 
-# :red_haired_man: hi!
+# hi!
 
 my name is Vitalya, i'm a software engineer from Kazakhstan. i'm {{ age }} years old.
 
