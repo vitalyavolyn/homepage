@@ -18,8 +18,8 @@ i've made some mini apps, chat bots and other random stuff that's scattered thro
 ## tools
 
 i like to work with:
-typescript, node.js/bun, nixos.
+typescript, node.js/bun, nixos
 
 ## links
 
-{{ links | join(', ') }}.
+{{ links | join(', ') }}
