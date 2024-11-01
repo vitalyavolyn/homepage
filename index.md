@@ -13,22 +13,13 @@ my name is Vitalya, i'm a software engineer from Kazakhstan. i'm {{ age }} years
 
 not many.
 
-i've made some mini-apps, chat-bots, and other random stuff that's scattered throughout my github/gist
+i've made some mini apps, chat bots and other random stuff that's scattered throughout my github/gist
 
-<!--
-a list of some of my active projects:
-
-{% for project in projects %}
-  - [{{ project.title }}]({{ project.link }}) ({{ project.text }})
-{% endfor %}
-
- -->
-
-## what do i use?
+## tools
 
 i like to work with:
 typescript, node.js/bun, nixos.
 
-## :earth_asia: links
+## links
 
 {{ links | join(', ') }}.
