@@ -5,24 +5,28 @@
 }
 ---
 
-# :red_haired_man: welcome!
+# :red_haired_man: hi!
 
-my name is Vitalya, i'm a JS developer from Kazakhstan.
+my name is Vitalya, i'm a software engineer from Kazakhstan.
 
-## :sparkles: what do i do?
+## :sparkles: projects?
 
-i've made some VK mini-apps, chat-bots and open-source projects.
+not many.
 
+i've made some mini-apps, chat-bots, and other random stuff that's scattered throughout my github/gist
+
+<!--
 a list of some of my active projects:
 
 {% for project in projects %}
   - [{{ project.title }}]({{ project.link }}) ({{ project.text }})
 {% endfor %}
+-->
 
 ## :hammer_and_wrench: what do i use?
 
 i like to work with:
-typescript, react, node.js, docker, mongodb, dart, linux, nix and nixos.
+typescript, node.js/bun, nixos.
 
 ## :earth_asia: links
 
