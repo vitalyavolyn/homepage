@@ -11,14 +11,14 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^3.0.0",
     "cross-env": "^7.0.2",
     "markdown-it": "^12.0.2",
     "markdown-it-emoji": "^2.0.0",
-    "node-fetch": "^2.6.1",
-    "prettier": "^2.2.1"
+    "node-fetch": "^3.3.2",
+    "prettier": "^3.3.3"
   },
   "optionalDependencies": {
-    "puppeteer": "^5.4.1"
+    "puppeteer": "^23.6.1"
   }
 }
