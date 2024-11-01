@@ -11,13 +11,13 @@ module.exports = (config) => {
 
   config.setLibrary('md', markdownLib)
 
-  config.addTransform("prettier", (content, outputPath) => {
-    if (outputPath.endsWith(".html")) {
-      return prettier.format(content, { parser: 'html' })
-    }
+  // config.addTransform("prettier", (content, outputPath) => {
+  //   if (outputPath.endsWith(".html")) {
+  //     return prettier.format(content, { parser: 'html' })
+  //   }
 
-    return content
-  })
+  //   return content
+  // })
 
   return {
     dir: {
