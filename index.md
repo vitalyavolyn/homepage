@@ -7,9 +7,9 @@
 
 # :red_haired_man: hi!
 
-my name is Vitalya, i'm a software engineer from Kazakhstan.
+my name is Vitalya, i'm a software engineer from Kazakhstan. i'm {{ age }} years old.
 
-## :sparkles: projects?
+## projects?
 
 not many.
 
@@ -21,9 +21,10 @@ a list of some of my active projects:
 {% for project in projects %}
   - [{{ project.title }}]({{ project.link }}) ({{ project.text }})
 {% endfor %}
--->
 
-## :hammer_and_wrench: what do i use?
+ -->
+
+## what do i use?
 
 i like to work with:
 typescript, node.js/bun, nixos.
