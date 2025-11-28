@@ -1,6 +1,6 @@
 # homepage
 this repository contains the source code for
-- my homepage at [vitalya.me](https://vitalya.me)
+- ~~my homepage at [vitalya.me](https://vitalya.me)~~ nah i made it with Astro
 - my github profile description
 
 ## usage
